@@ -23,11 +23,23 @@
 
 
 //Q3===Write a program to read the first and last digit of a number
-let a = parseInt(process.argv[2]);
-let first = a;
-while (first >= 10) {
-    first = Math.floor(first / 10);
-}
-let last = a % 10;
+//let a = parseInt(process.argv[2]);
+//let first = a;
+//while (first >= 10) {
+  //  first = Math.floor(first / 10);
+//}
+//let last = a % 10;
 
-console.log("First number is : " +first + " and " + "Last number is : " + last);
+//console.log("First number is : " +first + " and " + "Last number is : " + last);
+
+
+
+
+//Q2===Print the sum of all even numbers in a range from a to b. (Including a,b)
+let a = parseInt(process.argv[2]);
+let b = parseInt(process.argv[3]);
+for(let i=a; i<=b; i++){
+    if(i%2==0){
+        console.log(i);
+    }
+}
