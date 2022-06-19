@@ -74,15 +74,32 @@
 //Q7=====Check whether the given number is equal to its reverse number or not.
 
 
-let num = parseInt(process.argv[2]);
-let rev = 0;
+//let num = parseInt(process.argv[2]);
+//let rev = 0;
 
-let lastDigit;
+//let lastDigit;
 
-while(num != 0){
-	lastDigit = num % 10;
-  rev = rev * 10 + lastDigit;
-  num = Math.floor(num/10);
+//while(num != 0){
+	//lastDigit = num % 10;
+  //rev = rev * 10 + lastDigit;
+  //num = Math.floor(num/10);
+//}
+
+//console.log("Reverse number : "+rev);
+
+
+
+
+//Q4===// Check whether the given number is an armstrong number or not. 
+let a = parseInt(process.argv[2]);
+
+let x = a % 10;
+let y = Math.floor(a / 10);
+let z = y % 10;
+let ab = Math.floor(y / 10);
+let sum = (ab*ab*ab) + (z*z*z) + (x*x*x); 
+if(sum === a ){
+    console.log("It is an armstrong number");
+}else{
+    console.log("It is a prime number");
 }
-
-console.log("Reverse number : "+rev);
